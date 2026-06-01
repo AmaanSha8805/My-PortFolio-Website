@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amaan Shaikh — Software Engineer, Full Stack Developer & AI Enthusiast. Building scalable web and mobile applications with Java, React, AWS, and AI technologies.">
+  <meta name="keywords" content="Amaan Shaikh, Software Engineer, Full Stack Developer, React, Java, AWS, AI, Portfolio">
+  <meta name="author" content="Amaan Shaikh">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Amaan Shaikh | Software Engineer Portfolio">
+  <meta property="og:description" content="Results-driven Software Engineer specializing in Full Stack Development, Cloud Computing, and AI Technologies.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/profile.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Amaan Shaikh | Software Engineer Portfolio">
+  <meta name="twitter:description" content="Full Stack Developer & AI Enthusiast building scalable applications.">
+  <link rel="icon" type="image/png" href="assets/profile.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Amaan Shaikh | Software Engineer Portfolio</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amaan Shaikh",
+    "jobTitle": "Software Engineer",
+    "url": "https://github.com/AmaanSha8805",
+    "email": "amaanshaikhss510@gmail.com",
+    "sameAs": [
+      "https://linkedin.com/in/amaan510",
+      "https://github.com/AmaanSha8805"
+    ],
+    "knowsAbout": ["Java", "React", "AWS", "AI", "Android Development", "Full Stack Development"]
+  }
+  </script>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" class="loader" aria-hidden="true">
+    <div class="loader-content">
+      <div class="loader-ring"></div>
+      <p class="loader-text">Initializing Command Center<span class="loader-dots"></span></p>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- Floating Background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Home">
+        <span class="logo-bracket">&lt;</span>ASH<span class="logo-bracket">/&gt;</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#linkedin" class="nav-link nav-link-highlight">LinkedIn</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="hero-greeting">Developer Command Center</p>
+          <h1 class="hero-name">AMAAN SHAIKH</h1>
+          <div class="hero-typing">
+            <span id="typingText" aria-live="polite"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            Results-driven Software Engineer and Full Stack Developer with hands-on experience building scalable web and mobile applications using Java, React.js, React Native, Android SDK, REST APIs and AWS technologies.
+          </p>
+          <div class="hero-tags">
+            <span class="tag">Java</span>
+            <span class="tag">React</span>
+            <span class="tag">Android Development</span>
+            <span class="tag">AWS</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Artificial Intelligence</span>
+          </div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#" class="btn btn-outline" id="downloadResume">Download Resume</a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://linkedin.com/in/amaan510" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-profile reveal reveal-delay">
+          <img
+            src="assets/profile.png"
+            alt="Amaan Shaikh - Software Engineer"
+            class="profile-img"
+            width="400"
+            height="480"
+            loading="eager"
+          >
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="15">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" data-target="1">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to about">
+        <span class="scroll-mouse"></span>
+      </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// about</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-content glass-card reveal">
+            <p class="about-lead">Bachelor of Computer Science student passionate about building impactful software solutions.</p>
+            <p>I am a dedicated Software Engineer with internship experience at <strong>CerenMobile</strong>, where I honed my skills in Android and React Native development. My journey spans across full-stack engineering, cloud computing, and cutting-edge AI technologies.</p>
+            <p>With a strong foundation in <strong>Java Development</strong>, I thrive in building robust backend systems while crafting intuitive frontend experiences. I'm deeply interested in <strong>Cloud Computing</strong>, <strong>DevOps</strong> practices, and leveraging <strong>AI Technologies</strong> to solve real-world problems.</p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                <span>B.Sc. Computer Science</span>
+              </div>
+              <div class="highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                <span>Software Engineering Intern</span>
+              </div>
+              <div class="highlight-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>Full Stack & Cloud Focus</span>
+              </div>
+            </div>
+          </div>
+          <div class="terminal-wrapper reveal reveal-delay">
+            <div class="terminal" id="terminal">
+              <div class="terminal-header">
+                <div class="terminal-dots"><span></span><span></span><span></span></div>
+                <span class="terminal-title">amaan@dev-center ~ bash</span>
+              </div>
+              <div class="terminal-body" id="terminalBody">
+                <div class="terminal-output" id="terminalOutput">
+                  <p class="terminal-line"><span class="text-muted">Welcome to Developer Command Center. Type 'help' for commands.</span></p>
+                </div>
+                <div class="terminal-input-line">
+                  <span class="terminal-prompt">$</span>
+                  <input type="text" class="terminal-input" id="terminalInput" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// skills</span>
+          <h2 class="section-title">Technical Arsenal</h2>
+          <p class="section-subtitle">Technologies and tools I work with daily</p>
+        </div>
+        <div class="skills-grid">
+          <!-- Programming -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Programming</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="90"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div><span class="skill-pct">90%</span></div>
+              <div class="skill-card" data-level="88"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div><span class="skill-pct">88%</span></div>
+              <div class="skill-card" data-level="82"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-level="82"></div></div><span class="skill-pct">82%</span></div>
+              <div class="skill-card" data-level="85"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div><span class="skill-pct">85%</span></div>
+            </div>
+          </div>
+          <!-- Frontend -->
+          <div class="skill-category reveal reveal-delay">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+              </div>
+              <h3>Frontend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="92"><span class="skill-name">React.js</span><div class="skill-bar"><div class="skill-fill" data-level="92"></div></div><span class="skill-pct">92%</span></div>
+              <div class="skill-card" data-level="85"><span class="skill-name">Next.js</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div><span class="skill-pct">85%</span></div>
+              <div class="skill-card" data-level="90"><span class="skill-name">HTML5</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div><span class="skill-pct">90%</span></div>
+              <div class="skill-card" data-level="88"><span class="skill-name">CSS3</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div><span class="skill-pct">88%</span></div>
+              <div class="skill-card" data-level="90"><span class="skill-name">Tailwind CSS</span><div class="skill-bar"><div class="skill-fill" data-level="90"></div></div><span class="skill-pct">90%</span></div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><path d="M6 6h.01M6 18h.01"/></svg>
+              </div>
+              <h3>Backend</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="87"><span class="skill-name">Express.js</span><div class="skill-bar"><div class="skill-fill" data-level="87"></div></div><span class="skill-pct">87%</span></div>
+              <div class="skill-card" data-level="83"><span class="skill-name">FastAPI</span><div class="skill-bar"><div class="skill-fill" data-level="83"></div></div><span class="skill-pct">83%</span></div>
+              <div class="skill-card" data-level="88"><span class="skill-name">REST APIs</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div><span class="skill-pct">88%</span></div>
+            </div>
+          </div>
+          <!-- Mobile -->
+          <div class="skill-category reveal reveal-delay">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+              </div>
+              <h3>Mobile Development</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="88"><span class="skill-name">Android SDK</span><div class="skill-bar"><div class="skill-fill" data-level="88"></div></div><span class="skill-pct">88%</span></div>
+              <div class="skill-card" data-level="85"><span class="skill-name">React Native</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div><span class="skill-pct">85%</span></div>
+              <div class="skill-card" data-level="80"><span class="skill-name">Firebase</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div><span class="skill-pct">80%</span></div>
+              <div class="skill-card" data-level="82"><span class="skill-name">SQLite</span><div class="skill-bar"><div class="skill-fill" data-level="82"></div></div><span class="skill-pct">82%</span></div>
+            </div>
+          </div>
+          <!-- Cloud -->
+          <div class="skill-category reveal">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M18 10h-1.26A8 8 0 109 20h9a5 5 0 000-10z"/></svg>
+              </div>
+              <h3>Cloud & DevOps</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="78"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" data-level="78"></div></div><span class="skill-pct">78%</span></div>
+              <div class="skill-card" data-level="75"><span class="skill-name">Jenkins</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div><span class="skill-pct">75%</span></div>
+              <div class="skill-card" data-level="80"><span class="skill-name">CI/CD</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div><span class="skill-pct">80%</span></div>
+              <div class="skill-card" data-level="92"><span class="skill-name">Git & GitHub</span><div class="skill-bar"><div class="skill-fill" data-level="92"></div></div><span class="skill-pct">92%</span></div>
+            </div>
+          </div>
+          <!-- AI -->
+          <div class="skill-category reveal reveal-delay">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8 6a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M12 10v4"/><path d="M8 18h8"/><path d="M10 22h4"/></svg>
+              </div>
+              <h3>AI Technologies</h3>
+            </div>
+            <div class="skill-items">
+              <div class="skill-card" data-level="80"><span class="skill-name">LLMs</span><div class="skill-bar"><div class="skill-fill" data-level="80"></div></div><span class="skill-pct">80%</span></div>
+              <div class="skill-card" data-level="85"><span class="skill-name">Prompt Engineering</span><div class="skill-bar"><div class="skill-fill" data-level="85"></div></div><span class="skill-pct">85%</span></div>
+              <div class="skill-card" data-level="78"><span class="skill-name">RAG</span><div class="skill-bar"><div class="skill-fill" data-level="78"></div></div><span class="skill-pct">78%</span></div>
+              <div class="skill-card" data-level="75"><span class="skill-name">AI Agent Development</span><div class="skill-bar"><div class="skill-fill" data-level="75"></div></div><span class="skill-pct">75%</span></div>
+              <div class="skill-card" data-level="72"><span class="skill-name">NLP Concepts</span><div class="skill-bar"><div class="skill-fill" data-level="72"></div></div><span class="skill-pct">72%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// experience</span>
+          <h2 class="section-title">Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3>Software Engineer Intern</h3>
+                  <p class="timeline-company">CerenMobile</p>
+                </div>
+                <span class="timeline-badge">Internship</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Android Development with Java and Android Studio</li>
+                <li>React Native cross-platform mobile development</li>
+                <li>REST API integration and backend connectivity</li>
+                <li>Cloud deployment exposure and infrastructure</li>
+                <li>Debugging and performance optimization</li>
+                <li>Agile development methodology</li>
+                <li>Git and GitHub collaboration workflows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// projects</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Showcasing impactful software solutions</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-preview project-preview-astraa">
+              <img src="assets/project-astraa.png" alt="ASTRAA Climate Intelligence Platform dashboard preview" class="project-preview-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View ASTRAA on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+              <span class="project-badge">Featured</span>
+            </div>
+            <div class="project-body">
+              <h3>ASTRAA Climate Intelligence Platform</h3>
+              <p>Developed a climate intelligence platform integrating frontend, backend and machine learning services for real-time environmental data analysis.</p>
+              <div class="project-features">
+                <span>Weather Intelligence</span>
+                <span>Interactive Dashboards</span>
+                <span>AI Integration</span>
+                <span>Real-Time Visualization</span>
+              </div>
+              <div class="project-tech">
+                <span>Next.js</span><span>Express.js</span><span>FastAPI</span><span>PyTorch</span><span>Three.js</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal reveal-delay">
+            <div class="project-preview project-preview-ceren">
+              <img src="assets/project-cerenmobile.png" alt="CerenMobile Android Application preview" class="project-preview-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View CerenMobile on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>CerenMobile Android Application</h3>
+              <p>Developed and maintained Android mobile application features using Java and Android Studio with Firebase backend integration.</p>
+              <div class="project-features">
+                <span>Native Android</span>
+                <span>Firebase Auth</span>
+                <span>REST APIs</span>
+                <span>Performance Tuning</span>
+              </div>
+              <div class="project-tech">
+                <span>Java</span><span>Android SDK</span><span>Firebase</span><span>REST APIs</span><span>XML</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-preview project-preview-calisthenics">
+              <img src="assets/project-calisthenics.png" alt="Calisthenics Pro AI-powered fitness website preview" class="project-preview-img" loading="lazy">
+              <div class="project-overlay">
+                <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="View Calisthenics Pro on GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+              </div>
+              <span class="project-badge project-badge-ai">AI Powered</span>
+            </div>
+            <div class="project-body">
+              <p class="project-period">May 2025 — Sep 2025</p>
+              <h3>Calisthenics Pro – AI-Powered Fitness Website</h3>
+              <p>A modern full-stack fitness web application that generates personalized workout plans, diet plans, and health tips using Google Gemini AI. Users complete an interactive 18-question assessment and receive downloadable PDF plans tailored to their goals.</p>
+              <div class="project-features">
+                <span>18-Question Quiz</span>
+                <span>Gemini AI Plans</span>
+                <span>PDF Generation</span>
+                <span>Glass-morphism UI</span>
+                <span>Subscription Pricing</span>
+                <span>Progress Tracking</span>
+              </div>
+              <div class="project-tech">
+                <span>Next.js 14</span><span>TypeScript</span><span>Tailwind CSS</span><span>Framer Motion</span><span>FastAPI</span><span>Google Gemini</span><span>ReportLab</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View on GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// education</span>
+          <h2 class="section-title">Academic Journey</h2>
+        </div>
+        <div class="education-timeline">
+          <div class="edu-item reveal">
+            <div class="edu-marker">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div class="edu-content glass-card">
+              <div class="edu-header">
+                <h3>Bachelor of Computer Science</h3>
+                <span class="edu-duration">2023 — 2026</span>
+              </div>
+              <p class="edu-university">Swami Ramanand Teerth Marathwada University</p>
+              <div class="edu-details">
+                <div class="edu-cgpa">
+                  <span class="edu-label">Current CGPA</span>
+                  <span class="edu-value">— / 10.0</span>
+                </div>
+                <div class="edu-coursework">
+                  <span class="edu-label">Relevant Coursework</span>
+                  <div class="coursework-tags">
+                    <span>Data Structures & Algorithms</span>
+                    <span>Database Management</span>
+                    <span>Operating Systems</span>
+                    <span>Software Engineering</span>
+                    <span>Computer Networks</span>
+                    <span>Machine Learning</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// certifications</span>
+          <h2 class="section-title">Certifications & Simulations</h2>
+        </div>
+        <div class="certs-grid">
+          <article class="cert-card reveal">
+            <div class="cert-image-wrap">
+              <img src="assets/cert-aws.png" alt="AWS Building a Machine Learning Ready Organization completion certificate" class="cert-image" loading="lazy">
+            </div>
+            <div class="cert-body">
+              <h3>AWS Machine Learning Ready Organization Certification</h3>
+              <p>Amazon Web Services · July 2025</p>
+            </div>
+          </article>
+          <article class="cert-card reveal reveal-delay">
+            <div class="cert-image-wrap">
+              <img src="assets/cert-deloitte.png" alt="Deloitte Technology Job Simulation certificate of completion" class="cert-image" loading="lazy">
+            </div>
+            <div class="cert-body">
+              <h3>Deloitte Technology Job Simulation</h3>
+              <p>Forage / Deloitte · May 2026</p>
+            </div>
+          </article>
+          <article class="cert-card reveal">
+            <div class="cert-image-wrap">
+              <img src="assets/cert-skyscanner.png" alt="Skyscanner Front-End Software Engineering Job Simulation certificate" class="cert-image" loading="lazy">
+            </div>
+            <div class="cert-body">
+              <h3>Skyscanner Front-End Software Engineering Job Simulation</h3>
+              <p>Forage / Skyscanner · May 2026</p>
+            </div>
+          </article>
+          <article class="cert-card reveal reveal-delay">
+            <div class="cert-image-wrap">
+              <img src="assets/cert-genai.png" alt="GenAI Powered Data Analytics Job Simulation certificate" class="cert-image" loading="lazy">
+            </div>
+            <div class="cert-body">
+              <h3>GenAI Powered Data Analytics Job Simulation</h3>
+              <p>Forage / TATA · May 2026</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LinkedIn Section -->
+    <section id="linkedin" class="section section-linkedin">
+      <div class="container">
+        <div class="section-header reveal linkedin-section-header">
+          <span class="section-tag linkedin-tag">// linkedin — primary</span>
+          <h2 class="section-title linkedin-section-title">LinkedIn Profile</h2>
+          <p class="section-subtitle linkedin-section-subtitle">My professional network — connect for opportunities, collaborations, and engineering discussions</p>
+        </div>
+        <div class="linkedin-showcase reveal">
+          <div class="linkedin-glow" aria-hidden="true"></div>
+          <div class="linkedin-hero-card">
+            <div class="linkedin-card-top">
+              <div class="linkedin-brand-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div class="linkedin-identity">
+                <h3 class="linkedin-name">Amaan Shaikh</h3>
+                <p class="linkedin-headline">Software Engineer · Full Stack Developer</p>
+                <a href="https://linkedin.com/in/amaan510" target="_blank" rel="noopener noreferrer" class="linkedin-url">linkedin.com/in/amaan510</a>
+              </div>
+            </div>
+            <div class="linkedin-stats">
+              <div class="linkedin-stat-card">
+                <span class="linkedin-stat-value">500+</span>
+                <span class="linkedin-stat-label">Connections</span>
+              </div>
+              <div class="linkedin-stat-card">
+                <span class="linkedin-stat-value">Software</span>
+                <span class="linkedin-stat-label">Development</span>
+              </div>
+              <div class="linkedin-stat-card">
+                <span class="linkedin-stat-value">Problem</span>
+                <span class="linkedin-stat-label">Solving</span>
+              </div>
+              <div class="linkedin-stat-card">
+                <span class="linkedin-stat-value">AI &amp;</span>
+                <span class="linkedin-stat-label">Cloud Focus</span>
+              </div>
+            </div>
+            <div class="linkedin-highlights">
+              <span class="linkedin-pill">Full Stack Engineering</span>
+              <span class="linkedin-pill">Open to Opportunities</span>
+              <span class="linkedin-pill">Recruiter Friendly</span>
+            </div>
+            <a href="https://linkedin.com/in/amaan510" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              Connect on LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GitHub Section -->
+    <section id="github" class="section section-github">
+      <div class="container">
+        <div class="section-header reveal github-section-header">
+          <span class="section-tag">// github</span>
+          <h2 class="section-title github-section-title">GitHub Activity</h2>
+          <p class="section-subtitle">Live stats from <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="text-accent">@AmaanSha8805</a></p>
+        </div>
+        <div class="github-grid github-grid-subdued">
+          <div class="github-stats reveal">
+            <div class="github-stat-card glass-card">
+              <span class="github-stat-num" id="ghRepos">—</span>
+              <span class="github-stat-label">Repositories</span>
+            </div>
+            <div class="github-stat-card glass-card">
+              <span class="github-stat-num" id="ghFollowers">—</span>
+              <span class="github-stat-label">Followers</span>
+            </div>
+            <div class="github-stat-card glass-card">
+              <span class="github-stat-num" id="ghFollowing">—</span>
+              <span class="github-stat-label">Following</span>
+            </div>
+            <div class="github-stat-card glass-card">
+              <span class="github-stat-num" id="ghStars">—</span>
+              <span class="github-stat-label">Total Stars</span>
+            </div>
+          </div>
+          <div class="github-languages reveal reveal-delay">
+            <h3 class="github-subtitle">Top Languages</h3>
+            <div class="lang-bars" id="langBars">
+              <p class="text-muted">Loading languages...</p>
+            </div>
+          </div>
+          <div class="github-contrib reveal">
+            <h3 class="github-subtitle">Contribution Activity</h3>
+            <div class="contrib-grid" id="contribGrid" aria-label="Contribution graph style layout">
+              <!-- Generated by JS -->
+            </div>
+            <p class="contrib-note text-muted">Contribution-style activity visualization</p>
+          </div>
+          <div class="github-repos reveal reveal-delay">
+            <h3 class="github-subtitle">Recent Repositories</h3>
+            <div class="repo-list" id="repoList">
+              <p class="text-muted">Loading repositories...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">// contact</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">Open to opportunities in Software Engineering, Full Stack, AI & Cloud roles</p>
+        </div>
+        <div class="contact-wrapper reveal">
+          <div class="contact-card glass-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:amaanshaikhss510@gmail.com" class="contact-value">amaanshaikhss510@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/amaan510" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/amaan510</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              </div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/AmaanSha8805" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/AmaanSha8805</a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form glass-card" id="contactForm" novalidate>
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            <p class="form-note text-muted">Opens your email client with pre-filled message</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Designed &amp; Developed by <strong>Amaan Shaikh</strong></p>
+      <p class="footer-year">&copy; <span id="year"></span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
